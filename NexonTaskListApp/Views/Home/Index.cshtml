@@ -1,0 +1,12 @@
+﻿@model IEnumerable<NexonTaskListApp.Models.Task>
+
+<h1>Tasks</h1>
+@if (Model != null)
+{
+    int counter = 0;
+    foreach (var item in Model)
+    {
+        counter++;
+        @Html.Partial("_Task", item, new ViewDataDictionary { { "counter", counter } })
+    }
+}

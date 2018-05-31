@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2043
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexonTaskListApp", "NexonTaskListApp\NexonTaskListApp.csproj", "{E717489A-428F-409C-910E-14363404C469}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Live|Any CPU = Live|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Staging|Any CPU = Staging|Any CPU
+		Testing|Any CPU = Testing|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E717489A-428F-409C-910E-14363404C469}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E717489A-428F-409C-910E-14363404C469}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E717489A-428F-409C-910E-14363404C469}.Live|Any CPU.ActiveCfg = Live|Any CPU
+		{E717489A-428F-409C-910E-14363404C469}.Live|Any CPU.Build.0 = Live|Any CPU
+		{E717489A-428F-409C-910E-14363404C469}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E717489A-428F-409C-910E-14363404C469}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E717489A-428F-409C-910E-14363404C469}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{E717489A-428F-409C-910E-14363404C469}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{E717489A-428F-409C-910E-14363404C469}.Testing|Any CPU.ActiveCfg = Testing|Any CPU
+		{E717489A-428F-409C-910E-14363404C469}.Testing|Any CPU.Build.0 = Testing|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {41F8BB7D-FB37-40AB-AA71-1F5F4DB7F636}
+	EndGlobalSection
+EndGlobal

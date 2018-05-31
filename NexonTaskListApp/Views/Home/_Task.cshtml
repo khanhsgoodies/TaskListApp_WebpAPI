@@ -1,0 +1,33 @@
+﻿@model  NexonTaskListApp.Models.Task
+<div class="panel @((ViewData["test"] == null || (string)ViewData["test"]=="")?"panel-primary":"panel-info") list-panel">
+    <div class="panel-heading">
+        <a data-toggle="collapse" data-parent='#accordion' href="#panelLink@(ViewData["counter"])" class="collapsed @(!(Model.Subtasks != null && Model.Subtasks.Count > 0)?"disabled":"")">
+            <span>@ViewData["counter"].ToString().Replace("_",".")<span>.</span> @Model.Name</span><br />
+        </a>
+    </div>
+    @if (Model.Subtasks != null && Model.Subtasks.Count > 0)
+    {
+        <div class="panel-body">
+            <div id="panelLink@(ViewData["counter"])" class="collapse">
+                <h4>Sub Tasks</h4>
+                <ul class="list-group">
+                    @{
+                        int subcounter = 0;
+                        foreach (var item in Model.Subtasks)
+                        {
+                            subcounter++;
+                            @Html.Partial("_Task", item, new ViewDataDictionary { { "counter", ViewData["counter"] + "_" + subcounter.ToString() },{ "test","ok"} })
+                        }
+                    }
+                </ul>
+            </div>
+        </div>
+    }
+        <div class="panel-footer">
+            <span>Requester: @Model.Assignee</span>
+            <span>Assignee: @Model.Requester</span>
+            <span>Created Date: @Model.CreatedDate.ToString("MMM dd yyyy")</span>
+            <span>Updated Date: @Model.UpdatedDate.ToString("MMM dd yyyy")</span>
+        </div>
+
+</div>

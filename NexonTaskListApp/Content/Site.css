@@ -1,0 +1,77 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.list-panel {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+    .list-panel ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .list-panel .panel-body {
+        padding: 0;
+    }
+
+    .list-panel .panel-heading a {
+        display: block;
+        padding: 5px;
+        color: #fff;
+        text-decoration: none
+    }
+
+        .list-panel a.disabled:after {
+            display: none;
+        }
+
+    .list-panel ul {
+        padding: 20px 20px;
+    }
+
+        .list-panel ul li {
+        }
+
+    .list-panel a.disabled{cursor:default;}
+    .list-panel a:after {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-family: 'Glyphicons Halflings';
+        content: "\e113";
+    }
+
+    .list-panel a.collapsed:after {
+        content: "\e114";
+    }
+
+    .list-panel h3 {
+        margin: 25px 25px;
+    }
+    .list-panel .panel-footer span{
+        margin-right:10px;
+        color:gray;
+        font-size:12px;
+    }
+    .list-panel.panel-info a {
+        color: #31708f;
+    }
+    .list-panel h4{margin:20px 25px 0;}
+    .list-panel .panel-heading{font-weight:bold;font-size:16px;}
